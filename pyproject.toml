@@ -1,0 +1,21 @@
+[project]
+name = "moodmate"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ahmad Mujtaba", email = "ahmadmujtaba0202@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "openai-agents>=0.0.14",
+    "python-dotenv>=1.1.0",
+]
+
+[project.scripts]
+moodmate = "moodmate:main"
+sportbuddy = "moodmate.hello_agent:agent_run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
